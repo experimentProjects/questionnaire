@@ -48,8 +48,7 @@ const FormFurtherDetails = (props: Props) => {
                         </div>
                     </div>
                     <div className="subheading">
-                        <p>It's time to come a little closer. Please </p>
-                        <p className="lets-begin">- Let's Begin</p>
+                        <p>It's time to come a little closer. Please help us improve ourselves. </p>
                     </div>
                 </Col>
                 <Col data-aos="fade-left" lg='8' className="right-col">

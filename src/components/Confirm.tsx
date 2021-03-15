@@ -54,7 +54,7 @@ const Confirm = (props: Props) => {
                         </div>
                     </div>
                     <div className="subheading">
-                        <p>Let’s not go to fast and start with a basic introduction. Tell us about yourself a bit.</p>
+                        <p>See if you are missing something.</p>
                         <p className="lets-begin">- Let's Begin</p>
                     </div>
                 </Col>

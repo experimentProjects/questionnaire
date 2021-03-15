@@ -13,16 +13,20 @@ type FormData = {
     gender: string;
 };
 
-type CountryResponse = {
-
-}
-
 interface Props {
     next: () => void;
     setUserDetail: React.Dispatch<React.SetStateAction<FormData>>;
     userDetails: FormData;
     section: number;
 }
+
+// interface Res {
+//    res: {name: string ....}
+// }
+
+// interface Response {
+//     response: Array<Res>;
+// }
 
 const FormPersonalDetails = (props: Props) => {
 
@@ -45,7 +49,7 @@ const FormPersonalDetails = (props: Props) => {
           }
         )
           .then(res => res.json())
-          .then(response => {
+          .then((response) => {
             console.log(response);
 
             let select = document.getElementById('country');

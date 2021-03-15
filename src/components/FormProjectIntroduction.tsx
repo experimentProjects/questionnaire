@@ -47,7 +47,7 @@ const FormProjectIntroduction = (props: Props) => {
                         </div>
                     </div>
                     <div className="subheading">
-                        <p>Let’s not go to fast and start with a basic introduction. Tell us about yourself a bit.</p>
+                        <p>These information will make us understand you and your projects better. </p>
                         <p className="lets-begin">- Let's Begin</p>
                     </div>
                 </Col>
