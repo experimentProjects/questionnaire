@@ -2,7 +2,7 @@
 
 ## VISIT APP
 
-[https://master.d2wl9tderrg0ao.amplifyapp.com](Launch App)
+https://master.d2wl9tderrg0ao.amplifyapp.com
 
 This webApp is deployed on aws Amplify
 
