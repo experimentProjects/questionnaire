@@ -20,13 +20,61 @@ interface Props {
     section: number;
 }
 
-// interface Res {
-//    res: {name: string ....}
-// }
-
-// interface Response {
-//     response: Array<Res>;
-// }
+export interface Root {
+    name: string;
+    topLevelDomain?: (string)[] | null;
+    alpha2Code: string;
+    alpha3Code: string;
+    callingCodes?: (string)[] | null;
+    capital: string;
+    altSpellings?: (string)[] | null;
+    region: string;
+    subregion: string;
+    population: number;
+    latlng?: (number)[] | null;
+    demonym: string;
+    area: number;
+    gini: number;
+    timezones?: (string)[] | null;
+    borders?: (string)[] | null;
+    nativeName: string;
+    numericCode: string;
+    currencies?: (CurrenciesEntity)[] | null;
+    languages?: (LanguagesEntity)[] | null;
+    translations: Translations;
+    flag: string;
+    regionalBlocs?: (RegionalBlocsEntity)[] | null;
+    cioc: string;
+  }
+  export interface CurrenciesEntity {
+    code: string;
+    name: string;
+    symbol: string;
+  }
+  export interface LanguagesEntity {
+    iso639_1: string;
+    iso639_2: string;
+    name: string;
+    nativeName: string;
+  }
+  export interface Translations {
+    de: string;
+    es: string;
+    fr: string;
+    ja: string;
+    it: string;
+    br: string;
+    pt: string;
+    nl: string;
+    hr: string;
+    fa: string;
+  }
+  export interface RegionalBlocsEntity {
+    acronym: string;
+    name: string;
+    otherAcronyms?: (null)[] | null;
+    otherNames?: (null)[] | null;
+  }
 
 const FormPersonalDetails = (props: Props) => {
 
@@ -54,7 +102,7 @@ const FormPersonalDetails = (props: Props) => {
 
             let select = document.getElementById('country');
             let options = `<option value="select" placeholder="Select country..."></option>`;
-            let temp = response.map((res:any) => {
+            let temp = response.map((res:Root) => {
                 options += `<option ${(props.userDetails.country === res.name)? "selected": ""} 
                 value="${res.name}">${res.name}</option>`;
                 return true;
