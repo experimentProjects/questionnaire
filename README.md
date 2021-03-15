@@ -1,5 +1,3 @@
-# THANK YOU VISITING
-
 ## VISIT APP
 
 https://master.d2wl9tderrg0ao.amplifyapp.com
