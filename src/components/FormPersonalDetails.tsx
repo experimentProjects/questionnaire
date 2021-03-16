@@ -98,7 +98,7 @@ const FormPersonalDetails = (props: Props) => {
           .then((response) => {
             let select = document.getElementById('country');
             let options = `<option value="select" placeholder="Select country...">Select country...</option>`;
-            response.map((res:any) => {
+            response.map((res:Root) => {
                 options += `<option ${(props.userDetails.country === res.name)? "selected": ""} 
                 value="${res.name}">${res.name}</option>`;
                 return true;
