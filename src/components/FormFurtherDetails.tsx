@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Row, Col } from 'reactstrap';
-import logo from '../assets/images/logo.svg';
+import logo from '../assets/images/logo.png';
 import { useForm } from "react-hook-form";
 import anim from '../assets/animation/intro.gif';
 

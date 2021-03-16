@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/images/logo.svg';
+import logo from '../assets/images/logo.png';
 import logoBig from '../assets/images/q-img-logo.svg';
 import { Row, Col, Container } from 'reactstrap';
 import {useSpring, animated} from 'react-spring'
@@ -33,7 +33,7 @@ const Homepage = (props: Props) => {
                             </animated.div>
                             <div>
                                 <p>
-                                are dedicated to perform survey for collecting data as a research for determining the the best direction before starting the development of a website. 
+                                are dedicated to perform survey for collecting data as research for determining the best direction before starting the development of a website. 
                                 </p>
                                 <div data-aos="zoom-in" 
                                 data-aos-duration="500" data-aos-easing="ease-in-out"

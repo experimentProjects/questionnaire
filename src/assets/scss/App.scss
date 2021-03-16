@@ -11,6 +11,10 @@
   left: 1rem;
   width: 150px;
   position: relative;
+
+  img {
+    width:150px;
+  }
 }
 
 .right-col {
@@ -158,8 +162,14 @@
   width: 100%;
   z-index: 1;
   h3 {
-    font-size: 350px;
+    font-size: 300px;
     color: #F0F0F0;
+  }
+
+  @media screen and (max-width: 600px) {
+    h3 {
+      font-size: 280px;
+    }
   }
 }
 

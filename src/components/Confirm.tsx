@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 import logo from '../assets/images/logo.svg';
-import anim from '../assets/images/q-full-lg.png';
+import anim from '../assets/images/logo-u.png';
 
 type FormData1 = {
     fullName: string;

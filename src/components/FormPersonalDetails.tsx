@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Row, Col } from 'reactstrap';
-import logo from '../assets/images/logo.svg';
+import logo from '../assets/images/logo.png';
 import { useForm } from "react-hook-form";
-import hello from '../assets/images/q-full-logo.svg';
-
+import hello from '../assets/images/logo-u.svg';
 
 type FormData = {
     fullName: string;
@@ -97,8 +96,6 @@ const FormPersonalDetails = (props: Props) => {
         )
           .then(res => res.json())
           .then((response) => {
-            console.log(response);
-
             let select = document.getElementById('country');
             let options = `<option value="select" placeholder="Select country..."></option>`;
             response.map((res:Root) => {

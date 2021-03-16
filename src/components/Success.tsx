@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container } from 'reactstrap';
-import logo from '../assets/images/q-full-logo.svg';
+import logo from '../assets/images/logo-u.svg';
 
 interface Props {
 }
