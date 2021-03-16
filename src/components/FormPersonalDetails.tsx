@@ -87,7 +87,6 @@ const FormPersonalDetails = (props: Props) => {
     };
     
     const [isLoading, setIsLoading] = useState(true);
-    const [page, setPage] = useState(1);
     
     useEffect(() => {
         fetch(
@@ -102,20 +101,19 @@ const FormPersonalDetails = (props: Props) => {
 
             let select = document.getElementById('country');
             let options = `<option value="select" placeholder="Select country..."></option>`;
-            let temp = response.map((res:Root) => {
+            response.map((res:Root) => {
                 options += `<option ${(props.userDetails.country === res.name)? "selected": ""} 
                 value="${res.name}">${res.name}</option>`;
                 return true;
             });
-            setIsLoading(false);
+            setIsLoading((isLoading === true) ? false : true);
             if(select) {
                 select.innerHTML = options;
             }
           })
           .catch(error => alert(error));
-      }, [page, props.userDetails.country]);
+      }, [isLoading, props.userDetails.country]);
 
-    
     return (
         <>
             <Row>
