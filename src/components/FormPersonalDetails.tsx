@@ -82,7 +82,7 @@ const FormPersonalDetails = (props: Props) => {
     
     const onSubmit = (data: FormData) => {
             props.setUserDetail(data);
-            setIsReady(true); 
+            setIsReady(true);
     };
     
     const [isLoading, setIsLoading] = useState(true);
@@ -97,19 +97,20 @@ const FormPersonalDetails = (props: Props) => {
           .then(res => res.json())
           .then((response) => {
             let select = document.getElementById('country');
-            let options = `<option value="select" placeholder="Select country..."></option>`;
-            response.map((res:Root) => {
+            let options = `<option value="select" placeholder="Select country...">Select country...</option>`;
+            response.map((res:any) => {
                 options += `<option ${(props.userDetails.country === res.name)? "selected": ""} 
                 value="${res.name}">${res.name}</option>`;
                 return true;
             });
-            setIsLoading((isLoading === true) ? false : true);
+            
+            setIsLoading(false);
             if(select) {
                 select.innerHTML = options;
             }
           })
           .catch(error => alert(error));
-      }, [isLoading, props.userDetails.country]);
+      }, [props.userDetails.country]);
 
     return (
         <>
@@ -137,6 +138,7 @@ const FormPersonalDetails = (props: Props) => {
                         <p className="lg-txt">CREATE BETTER TOGETHER</p>
                         <p className="sml-txt">"We'd Love to hear from you"</p>
                     </div>
+                    <span>{isLoading}</span> 
                     <form id="myForm" onSubmit={handleSubmit(onSubmit)}> 
                         <div className="form-cnt">
                             <div className="input-field">   
