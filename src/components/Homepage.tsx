@@ -33,12 +33,12 @@ const Homepage = (props: Props) => {
                             </animated.div>
                             <div>
                                 <p>
-                                are dedicated to perform servey for collecting data as a research for determining the the best direction before starting the development of a website. 
+                                are dedicated to perform survey for collecting data as a research for determining the the best direction before starting the development of a website. 
                                 </p>
                                 <div data-aos="zoom-in" 
                                 data-aos-duration="500" data-aos-easing="ease-in-out"
                                 className="button-cnter">
-                                    <button name="next" onClick={props.next} type="button">START SERVEY</button>
+                                    <button name="next" onClick={props.next} type="button">START SURVEY</button>
                                 </div>
                                 <p className="error">*(Please do not refresh the page once you enter into questionnaire.)</p>
                             </div>
