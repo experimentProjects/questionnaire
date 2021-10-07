@@ -1,7 +1,6 @@
 ## VISIT APP
 
-Amplify AWS: https://master.d2wl9tderrg0ao.amplifyapp.com
-netlify : https://epic-shockley-3d7136.netlify.app
+netlify : https://questionnairee.netlify.app/
 
 This webApp is deployed on aws Amplify and Netlify
 
